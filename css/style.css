@@ -16,6 +16,8 @@ body {
 
 .section2 {
   flex: 1;
+  background-color: rgb(123, 134, 150);
+  margin-top: -3%;
 }
 
 h1 {
