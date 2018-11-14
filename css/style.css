@@ -1,3 +1,24 @@
+/*responsive font size*/
+@media screen and (min-width: 801px) {
+  p,
+  .box {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  p,
+  .box {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
 body {
   background-color: #7384a0;
 }
@@ -5,28 +26,50 @@ body {
 .container1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: "Questrial", sans-serif;
   color: #3d434c;
 }
-.section1 {
-  flex: 2;
-}
 
-.section2 {
-  flex: 1;
+.sectionA {
   background-color: rgb(123, 134, 150);
-  margin-top: -3%;
+  margin-top: -15px;
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
-  font-size: 3vw;
   width: 70%;
   text-align: center;
   margin: auto;
+}
+
+.container2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-gap: 10px 20px;
+  justify-content: center;
+}
+
+.boxA {
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.boxB {
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
