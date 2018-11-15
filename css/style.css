@@ -19,6 +19,15 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  p,
+  .box {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
 body {
   background-color: #7384a0;
 }
@@ -52,24 +61,24 @@ p {
   margin: auto;
 }
 
-.container2 {
-  margin-top: 20px;
+input[type="text"] {
+  padding: 2px 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #3d434c;
+  border-radius: 3px;
+  background-color: rgb(123, 134, 150);
+  color: #3d434c;
+  outline: none;
+}
+input[type="text"]:focus {
+  background-color: rgb(174, 181, 192);
+}
+
+.formarea {
+  margin-top: 1em;
   display: grid;
-  grid-template-columns: 35% 35%;
-  grid-gap: 10px 20px;
-  justify-content: center;
-}
-
-.boxA {
-  background: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.boxB {
-  background: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  justify-items: center;
 }
