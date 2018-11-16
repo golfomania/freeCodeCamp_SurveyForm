@@ -19,7 +19,7 @@
     <div class="container1">
       <!-- titel -->
       <div>
-        <header><h1 id="title">business process feedback survey</h1></header>
+        <header><h1 id="title">business process feedback survey</h1>
       </div>
       <!-- description of the survey -->
       <div class="sectionA">
@@ -29,37 +29,43 @@
         </p>
       </div>
 
-      <!-- form section -->
-      <div class="formarea">
-        <form id="survey-form" action="">
-          Name
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name here"
-          />
-        </form>
-        <form id="survey-form" action="">
-          E-Mail
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Enter your E-Mail address here"
-          />
-        </form>
-        <form id="survey-form" action="">
-          Age
-          <input
-            type="text"
-            name="age"
-            id="age"
-            placeholder="Enter your age here"
-          />
-        </form>
-      </div>
+    <!-- form section -->
+    <div class="formarea">
+      <div><h3>Personal Information</h3></div>
+      <form id="survey-form" action="">
+          <table> 
+            <tr>
+              <td align="right">Name</td>
+              <td align="left"><input
+                 type="text"
+                 name="name"
+                 id="name"
+                 placeholder="Enter your name here"
+                /></td>
+          </tr>
+          <tr>
+              <td align="right">E-Mail</td>
+              <td align="left"><input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter your E-Mail address here"
+                /></td>        
+        </tr>
+        <tr>
+            <td align="right">Age</td>
+            <td align="left"><input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="Enter your age here"
+            /></td>
+        </tr>
+    </table> 
+      </form>
     </div>
+  </div>
+
     <footer></footer>
   </body>
 </html>
