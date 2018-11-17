@@ -38,7 +38,7 @@
       <form id="survey-form" action="">
           <table class="boxing"> 
             <tr>
-              <td align="right"><label for="name-label">Name</label></td>
+              <td align="right"><label for="name-label" id="name-label">Name</label></td>
               <td align="left"><input
                  type="text"
                  name="name"
@@ -48,20 +48,21 @@
                 /></td>
           </tr>
           <tr>
-              <td align="right"><label for="email-label">E-Mail</label></td>
+              <td align="right"><label for="email-label" id="email-label">E-Mail</label></td>
               <td align="left"><input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your E-Mail address here"
+                required
                 /></td>        
         </tr>
         <tr>
-            <td align="right"><label for="number-label">Age</label> </td>
+            <td align="right"><label for="number-label" id="number-label">Age</label> </td>
             <td align="left"><input
               type="number"
               name="age"
-              id="age"
+              id="number"
               placeholder="Enter your age here"
               min="18"
               max="100"
@@ -88,18 +89,16 @@
     <!-- radio buttons -->
     <div><h3>Can this process be improved?</h3></div>
     <div class="boxing">
-      <form action="">
         <input type="radio" name="improve" value="no we have to live with as it is"> no we have to live with it as it is<br>
         <input type="radio" name="improve" value="maybe, but I dont't know how"> maybe, but I dont't know how<br>
         <input type="radio" name="improve" value="definitively yes"> definitively yes and I have some ideas <br>
-      </form>
     </div>
 <!-- checkboxes -->
       <h3>What area should be improved?</h3>
       <div class="boxing">
-         <label for="area"><input id="area" type="checkbox" name="communication"/> communication</label><br>
-         <label for="area"><input id="area" type="checkbox" name="knowledge management"/> knowledge management</label><br>
-          <label for="area"><input id="area" type="checkbox" name="software/tools"/> software / tools</label>
+         <input name="improve1" type="checkbox" value="communication"><label for="area"> communication</label><br>
+         <input name="improve2" type="checkbox" value="knowledge"><label for="area"> knowledge management</label><br>
+        <input name="improve3"  type="checkbox" value="software"><label for="area"> software / tools</label>
       </div>
   <!-- textarea -->
     <h3>Your comment</h3>
