@@ -47,7 +47,7 @@ body {
 
 .sectionA {
   background-color: rgb(207, 221, 241);
-  border-radius: 20px;
+  border-radius: 200px 200px 0px 0px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: -10px;
@@ -63,11 +63,19 @@ p {
 
 .formarea {
   margin-top: 20px;
-  border: 1px solid red;
-  box-shadow: ;
+}
+.boxing {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  box-shadow: 10px 10px 8px #444f7e;
+  padding: 15px;
+  margin-top: 10px;
+  width: 400px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="number"] {
   padding: 2px 2px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -76,11 +84,18 @@ input[type="text"] {
   background-color: rgb(207, 221, 241);
   color: #3d434c;
   outline: none;
+  width: 200px;
 }
 input[type="text"]:focus {
   background-color: rgb(255, 255, 255);
 }
+input[type="email"]:focus {
+  background-color: rgb(255, 255, 255);
+}
+input[type="number"]:focus {
+  background-color: rgb(255, 255, 255);
+}
 h3 {
-  margin-left: -100px;
-  margin-bottom: 8px;
+  margin-left: -85px;
+  margin-bottom: -5px;
 }

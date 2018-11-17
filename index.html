@@ -33,39 +33,65 @@
     <div class="formarea">
       <div><h3>Personal Information</h3></div>
       <form id="survey-form" action="">
-          <table> 
+          <table class="boxing"> 
             <tr>
-              <td align="right">Name</td>
+              <td align="right"><label for="name-label">Name</label></td>
               <td align="left"><input
                  type="text"
                  name="name"
                  id="name"
                  placeholder="Enter your name here"
+                 required
                 /></td>
           </tr>
           <tr>
-              <td align="right">E-Mail</td>
+              <td align="right"><label for="email-label">E-Mail</label></td>
               <td align="left"><input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder="Enter your E-Mail address here"
                 /></td>        
         </tr>
         <tr>
-            <td align="right">Age</td>
+            <td align="right"><label for="number-label">Age</label> </td>
             <td align="left"><input
-              type="text"
+              type="number"
               name="age"
               id="age"
               placeholder="Enter your age here"
+              min="18"
+              max="100"
             /></td>
         </tr>
     </table> 
+    <div><h3>Overall Process Satisfaction</h3></div>
+    <div class="boxing">
+      <table>
+        <tr>
+            <td align="right"><label for="dropdown">Please grade our process</label></td>
+            <td align="left">
+      <select name="dropdown" id="dropdown" size="5">
+        <option value="very good">very good</option>
+        <option value="good">good</option>
+        <option value="average">average</option>
+        <option value="accepted">accepted</option>
+        <option value="failure">failure</option>
+      </select></td>
+    </tr>
+    </table>
+    </div>
+
+    <div><h3>Your comment</h3></div>
+    <div class="boxing">
+        <textarea name="message" rows="10" cols="30">
+Leave your comment here...            </textarea>
+    </div>
       </form>
     </div>
+
   </div>
 
-    <footer></footer>
+
   </body>
 </html>
