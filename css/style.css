@@ -1,31 +1,43 @@
 /*responsive font size*/
 @media screen and (min-width: 801px) {
   p,
-  .box {
+  .box,
+  input[type="submit"] {
     font-size: 20px;
   }
   h1 {
     font-size: 50px;
   }
+  h3 {
+    margin-left: -85px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   p,
-  .box {
+  .box,
+  input[type="submit"] {
     font-size: 14px;
   }
   h1 {
     font-size: 30px;
   }
+  h3 {
+    margin-left: -50px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   p,
-  .box {
+  .box,
+  input[type="submit"] {
     font-size: 12px;
   }
   h1 {
     font-size: 20px;
+  }
+  h3 {
+    margin-left: 0px;
   }
 }
 body {
@@ -43,15 +55,17 @@ body {
   color: #343a42;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .sectionA {
   background-color: rgb(207, 221, 241);
   border-radius: 200px 200px 0px 0px;
-  margin-left: 20px;
-  margin-right: 20px;
+
   margin-top: -10px;
   padding: 5px;
+  width: 100%;
+  max-width: 600px;
 }
 
 p {
@@ -63,6 +77,10 @@ p {
 
 .formarea {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .boxing {
   border-right: 1px solid;
@@ -96,6 +114,37 @@ input[type="number"]:focus {
   background-color: rgb(255, 255, 255);
 }
 h3 {
-  margin-left: -85px;
   margin-bottom: -5px;
+}
+
+input[type="submit"] {
+  padding: 5px 5px;
+  text-align: center;
+  background-color: rgb(207, 221, 241);
+  color: #343a42;
+  border: 2px solid rgb(207, 221, 241);
+  font-family: "Questrial", sans-serif;
+  color: #343a42;
+}
+.subbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: rgb(207, 221, 241);
+  border-radius: 0 0 200px 200px;
+  color: #343a42;
+  width: 100%;
+  max-width: 600px;
+}
+textarea {
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+  color: #343a42;
+}
+
+select {
+  width: 150px;
+  font-family: "Questrial", sans-serif;
+  color: #343a42;
 }
